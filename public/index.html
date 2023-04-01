@@ -11,6 +11,7 @@
 
 
     <style>
+        @media only screen and (min-width:1280px){
         h3{
             margin: 20px;
             font-family: serif;
@@ -44,6 +45,10 @@
             border: 2px solid black;
         }
 
+         .left-small-pic{
+           display: none;
+        }
+
         p{
             text-align: justify;
             font-family: serif;
@@ -59,12 +64,77 @@
             width: 100%;
             color: white;
             background-color: black;
+            position: static;
             bottom: 0;
             line-height: 30px;
         }
         input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
             -webkit-appearance: none;
             margin: 0;
+        }
+        }
+
+
+        @media only screen and (max-width:480px){
+            h3{
+            margin: 20px;
+            font-family: serif;
+            font-size: 1.5rem;
+        }
+        h4{
+            font-family: monospace;
+            font-size: 1rem;
+        }
+        body{
+            margin: 0;
+            margin-top: 10px;
+            padding: 0;
+        }
+
+        .intro{
+            margin-top: 20px;
+        }
+        .left{
+            align-items: center;
+            text-align: center;
+            display: none;
+        }
+        .right{
+            align-items: center;
+            text-align: center;
+        }
+        img{
+            border-radius: 100%;
+            border: 2px solid black;
+        }
+
+        p{
+            text-align: justify;
+            font-family: serif;
+            font-size: 1rem;
+        }
+        .left-small-pic{
+            align-items: center;
+            text-align: center;
+        }
+        footer{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            color: white;
+            background-color: black;
+            bottom: 0;
+            line-height: 30px;
+            position: static;
+        }
+        input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
         }
 
     </style>
@@ -84,15 +154,17 @@
                 <div class="row">
                     <div class="intro">
                         <div class="left"><img src="./rp.png" alt="rp pic"></div>
+                        <div class="left-small-pic"><img src="./rp.png" alt="rp pic"></div><br>
                         <div class="right">
                             <p>Hi, i'm Ramprasad a computer science graduate specialized in MERN stack, python programming  and cyber security.I'm going to tutor you web development from basic to intermediate level in this course.</p><br><br>
                         </div>
                     </div>
                     <div class="intro">
+                        <div class="left-small-pic"><img src="./vaibhav.png" alt="vaibhav pic"></div><br>
                         <div class="right">
                             <p>Hi, i'm Vaibhav a computer science graduate specialized in MERN stack, Data structures, python and java programming. I'm going to tutor you Core Java from basic to intermediate level in this course.</p><br><br>
                         </div>
-                        <div class="left"><img src="./vaibhav.png" alt="vaibhav pic"></div>  
+                        <div class="left"><img src="./vaibhav.png" alt="vaibhav pic"></div>
                     </div>
                 </div>
             </div>
