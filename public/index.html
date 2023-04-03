@@ -55,7 +55,7 @@
             flex: 70%;
             text-align: center;
         }
-        img{
+        .profile{
             border-radius: 100%;
             border: 2px solid black;
         }
@@ -68,6 +68,10 @@
             text-align: justify;
             font-family: serif;
             font-size: 1.5rem;
+        }
+        .logo{
+            height: 80px;
+            width: 80px;
         }
         footer{
             margin-top: 50px;
@@ -132,7 +136,7 @@
             align-items: center;
             text-align: center;
         }
-        img{
+        .profile{
             border-radius: 100%;
             border: 2px solid black;
         }
@@ -160,7 +164,10 @@
             line-height: 30px;
             position: static;
         }
-
+        .logo{
+            height: 80px;
+            width: 80px;
+        }
 
         input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
             -webkit-appearance: none;
@@ -184,51 +191,83 @@
             <div class="container">
                 <div class="row">
                     <div class="intro">
-                        <div class="left"><img src="./rp.png" alt="rp pic"></div>
-                        <div class="left-small-pic"><img src="./rp.png" alt="rp pic"></div><br>
+                        <div class="left">
+                            <img src="./rp.png" alt="rp pic" class="profile">
+                            <div>
+                                <img src="./logos/tollplus.png" alt="Tollplus logo" class="logo">
+                                <img src="./logos/hcl.png" alt="Hcl logo" class="logo">
+                            </div>
+                        </div>
+                        <div class="left-small-pic">
+                            <img src="./rp.png" alt="rp pic" class="profile">
+                            <div>
+                            <img src="./logos/tollplus.png" alt="Tollplus logo" class="logo">
+                            <img src="./logos/hcl.png" alt="Hcl logo" class="logo">
+                            </div>
+                        </div><br>
                         <div class="right">
-                            <p>Hi, i'm Ramprasad a computer science graduate specialized in MERN stack, python programming  and cyber security. I'm going to tutor you web development from basic to intermediate level in this course. You will learn <span class="red">HTML5, CSS3, JavaScript, Node js, Express js, Mongo Db</span> throughout this entire course. In the end you get enough skills to create webpages with backend and database connectivity.</p><br><br>
+                            <p>Hi, i'm Ramprasad a computer science graduate specialized in MERN stack, python programming and cyber security. I'm going to tutor you web development from basic to intermediate level in this course. You will learn <span class="red">HTML5, CSS3, JavaScript, Node js, Express js, Mongo Db</span> throughout this course. In the end you get enough skills to create webpages with backend and database connectivity.</p><br><br>
                         </div>
                     </div>
                     <div class="intro">
-                        <div class="left-small-pic"><img src="./vaibhav.png" alt="vaibhav pic"></div><br>
+                        <div class="left-small-pic">
+                            <img src="./vaibhav.png" alt="vaibhav pic" class="profile">
+                            <div>
+                                <img src="./logos/tollplus.png" alt="Tollplus logo" class="logo">
+                                <img src="./logos/hcl.png" alt="Hcl logo" class="logo">
+                                <img src="./logos/tcs.png" alt="Tcs logo" class="logo">
+                                <img src="./logos/tech-m.png" alt="tech-m" class="logo">
+                            </div>
+                        </div><br>
                         <div class="right">
-                            <p>Hi, i'm Vaibhav a computer science graduate specialized in MERN stack, Data structures, python and java programming. I'm going to tutor you Core Java from basic to intermediate level in this course. You will learn <span class="red">core java, DSA problems and interview preparation</span> throughout this entire course.[interview readiness]</p><br><br>
+                            <p>Hi, i'm Vaibhav a computer science graduate specialized in MERN stack, Data structures, Core java and Python programming. I'm going to tutor you Core Java from basic to intermediate level in this course. You will learn <span class="red">Core Java, DSA problems and interview preparation</span> throughout this course.[interview readiness]</p><br><br>
                         </div>
-                        <div class="left"><img src="./vaibhav.png" alt="vaibhav pic"></div>
+                        <div class="left">
+                            <img src="./vaibhav.png" alt="vaibhav pic" class="profile">
+                            <div>
+                                <img src="./logos/tollplus.png" alt="Tollplus logo" class="logo">
+                                <img src="./logos/hcl.png" alt="Hcl logo" class="logo">
+                                <img src="./logos/tcs.png" alt="Tcs logo" class="logo">
+                                <img src="./logos/tech-m.png" alt="tech-m" class="logo">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
         <div>
             <br><br>
-            <h3 class="jumbotron text-center">Courses and their price details</h3>
+            <h3 class="jumbotron text-center">Courses and their details</h3>
             <table class="table table-striped">
                 <thead>
                   <tr>
                     <th scope="col">Courses</th>
                     <th scope="col">Price</th>
+                    <th scope="col">Duration</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>Web Development</td>
                     <td>899/-</td>
+                    <td>40 hrs</td>
                   </tr>
                   <tr>
                     <td>Core Java</td>
                     <td>799/-</td>
+                    <td>40 hrs</td>
                   </tr>
                   <tr>
                     <td>web Development & Core Java</td>
                     <td>1299/-</td>
+                    <td>80 hrs</td>
                   </tr>
 
                 </tbody>
               </table>
         </div>
         <div>
-            <p class="note"><span class="red">Note</span>: Only serious candidates with a laptop and proper internet connection are recommended to fill the form for demo class.</p>
+            <p class="note"><span class="red">Note</span>: Only serious candidates are recommended to fill the form for demo class.</p>
         </div>
         <div class="form text-center">
             <br>
@@ -238,7 +277,7 @@
                 <input class="form-control-lg" type="text" id="name" name="name" placeholder="Enter your Full name" required><br><br>
                 <input class="form-control-lg" type="email" id="email" name="email" placeholder="Enter your Email ID" required><br><br>
                 <input class="form-control-lg" type="number" id="number" name="number" placeholder="Enter your phone number" required><br><br>
-                <label for="whatsapp">Add me to telegram group: &nbsp;</label><input class="form-check-input" type="checkbox" id="whatsapp" name="whatsapp" value="Add_me" checked="true"><br><br>
+                <label for="whatsapp">Add me to whatsapp group: &nbsp;</label><input class="form-check-input" type="checkbox" id="whatsapp" name="whatsapp" value="Add_me" checked="true"><br><br>
                 <label for="course">select course you are interested in:</label><br><br>
                 <select name="course" id="course" class="select">
                     <option >---Select---</option>
