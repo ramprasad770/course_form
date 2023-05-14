@@ -36,7 +36,7 @@ db.once('open',function(){
     console.log("connected to database.")
 })
 
-// instagram
+
 app.post("/submit",function(req,res){
     let name =req.body.name;
     let email =req.body.email;
@@ -69,5 +69,8 @@ app.get("/",function(req,res){
     return res.redirect('index.html')
 }).listen(port,hostname);
 
+app.use((req,res,next)=>{
+    res.status(404).render('error.html');
+});
 
 console.log(`listening on port ${port}`);
