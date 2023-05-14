@@ -70,7 +70,7 @@ app.get("/",function(req,res){
 }).listen(port,hostname);
 
 app.use((req,res,next)=>{
-    res.status(404).render('error.html');
+    res.status(404).redirect('error.html');
 });
 
 console.log(`listening on port ${port}`);
